@@ -25,6 +25,8 @@ def load(style):
                 Y = np.concatenate((Y, matrix_y), axis=0)
         except Exception as e:
             pass
+    print(f'X shape: {X.shape}')
+    print(f'Y shape: {Y.shape}')
     return (X,Y)
 
 def parse_multiple_dynamic(file):
