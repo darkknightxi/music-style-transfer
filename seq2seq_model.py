@@ -22,9 +22,9 @@ class Seq2SeqLSTM():
         self.learning_rate = 0.0015
         self.alpha_zero_loss = 10
         
-        def encoder_conv_layer(self, inputs):
-            outputs = Conv1D(filters=self.encoder_conv_filters, kernel_size=2, strides=1, padding="same", activation='relu', input_shape=inputs.shape)(inputs)
-            return outputs
+    def encoder_conv_layer(self, inputs):
+        outputs = Conv1D(filters=self.encoder_conv_filters, kernel_size=2, strides=1, padding="same", activation='relu', input_shape=inputs.shape)(inputs)
+        return outputs
 
 
     def encoder_lstm_layer(self, inputs):
